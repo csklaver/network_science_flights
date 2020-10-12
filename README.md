@@ -1,13 +1,8 @@
-# network_science_flights
+# Network Data Science Final Project
+## Making Connections: An Analysis of US Commercial Aviation Networks
+- Exploration and analysis of the US commercial airline transportation networks from 1998 to 2018.
+- Measured the betweenness, centrality, diameter, and degree using `igraph` library.
+- Network visualizations were created using `ggplot2`
+- Case study of Southwest Airlines and Delta revealed the differences in growth strategies.
+- Found the network to be robust when removing hubs (in the case of COVID-19), but unable to handle the same volume of passengers.
 
-## Initial EDA
-- Times are read in as integers.  Need to be joined with the date to be used at date times.
-- All values are 1 for Flights, confirming this dataset is for unique flights each day.
-- Cancelled and diverted are so rare, we likely dont need them as columns
-- Distance can be used for comparing to future GIS solutions or plots.  Could also be a good metric for each different airline or day to see how many miles were covered in total.
-- WN is the most numerous airline, and it stands for Southwest.
-
-## Some Questions to explore
-- Look at flights by day, and maybe eventually by month.  What are the trends?  Are there differences across different airline or at different airports?
-- Do different airlines operate more or less are different airports?
-- Need geo coords for all the nodes in our data so I can plot them.
